@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Responsive</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      html, body { height: 100%; margin: 0; }
+      table { width: 100vw; height: 100vh; border-collapse: collapse; table-layout: fixed; }
+      td { border: 1px solid #000; padding: 12px; vertical-align: middle; text-align: center;
+           font-size: clamp(14px, 3vw, 28px); }
+      .left  { background: #b7c26e; }
+      .right { background: #f3b9ac; }
+      @media (max-width: 500px) {
+        td { padding: 8px; font-size: clamp(12px, 4vw, 22px); }
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <td class="left">First year</td>
+        <td class="right">Second year</td>
+      </tr>
+    </table>
+  </body>
+</html>
