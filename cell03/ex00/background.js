@@ -1,8 +1,8 @@
 function randomBgColor() {
-    var x = Math.floor(Math.random() * 256);
-    var y = Math.floor(Math.random() * 256);
-    var z = Math.floor(Math.random() * 256);
-    var bgColor = "rgb(" + x + "," + y + "," + z + ")";
+    var r = Math.floor(Math.random() * 256);
+    var g = Math.floor(Math.random() * 256);
+    var b = Math.floor(Math.random() * 256);
+    var bgColor = "rgb(" + r + "," + g + "," + b + ")";
     console.log(bgColor);
   
     document.body.style.background = bgColor;
